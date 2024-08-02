@@ -1,0 +1,106 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Aug  2 10:05:45 2024
+| Host         : EESBACHIMAN1 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file llrf3p0_digitizer_top_control_sets_placed.rpt
+| Design       : llrf3p0_digitizer_top
+| Device       : xc7a200t
+--------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    28 |
+|    Minimum number of control sets                        |    28 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   106 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    28 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     5 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     4 |
+| >= 16              |    10 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            3541 |          706 |
+| No           | No                    | Yes                    |              45 |           16 |
+| No           | Yes                   | No                     |             323 |           96 |
+| Yes          | No                    | No                     |              21 |            9 |
+| Yes          | No                    | Yes                    |              64 |           21 |
+| Yes          | Yes                   | No                     |              44 |           13 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+----------------------------------------+--------------------------------------------+------------------+----------------+
+|    Clock Signal   |              Enable Signal             |              Set/Reset Signal              | Slice Load Count | Bel Load Count |
++-------------------+----------------------------------------+--------------------------------------------+------------------+----------------+
+|  sysclk_IBUF_BUFG | d[vadj_en]                             | noniq_dac_186mhz_inst1/cpu_resetn          |                1 |              1 |
+|  sysclk_IBUF_BUFG | cpu_resetn_IBUF                        |                                            |                2 |              2 |
+|  i2c_clock        | lmk_inst/data_in_d                     |                                            |                1 |              4 |
+|  sysclk_IBUF_BUFG | ad9781_inst/en_bit_count               | noniq_dac_186mhz_inst1/cpu_resetn          |                1 |              4 |
+|  i2c_clock        | lmk_inst/en_bit_cnt                    | lmk_inst/bit_cnt_q[4]_i_1_n_0              |                1 |              5 |
+|  i2c_clock        | lmk_inst/data_reg_q[17]_i_1_n_0        | lmk_inst/data_reg_q[26]_i_1_n_0            |                1 |              5 |
+|  sysclk_IBUF_BUFG | ad9781_inst/reg_count_q[4]_i_1_n_0     | noniq_dac_186mhz_inst1/cpu_resetn          |                2 |              5 |
+|  i2c_clock        | lmk_inst/data_reg_q[17]_i_1_n_0        | lmk_inst/data_reg_q[27]_i_1_n_0            |                1 |              6 |
+|  i2c_clock        | lmk_inst/en_wait_cnt                   | noniq_dac_186mhz_inst1/cpu_resetn          |                3 |              8 |
+|  i2c_clock        | lmk_inst/en_reg_cnt                    | noniq_dac_186mhz_inst1/cpu_resetn          |                5 |              9 |
+|  sysclk_IBUF_BUFG | ad9781_inst/wait_count_q[8]_i_1_n_0    | noniq_dac_186mhz_inst1/cpu_resetn          |                3 |              9 |
+|  i2c_clock        | lmk_inst/data_in_d                     | noniq_dac_186mhz_inst1/cpu_resetn          |                2 |             11 |
+|  dac_dco_BUFG     |                                        | noniq_dac_186mhz_inst0/d_out_d1            |                3 |             13 |
+|  dac_dco_BUFG     |                                        | noniq_dac_186mhz_inst1/d_out_q[14]_i_1_n_0 |                2 |             13 |
+|  dac_dco_BUFG     |                                        | noniq_dac_186mhz_inst1/q_out_q[14]_i_1_n_0 |                3 |             15 |
+|  dac_dco_BUFG     |                                        | noniq_dac_186mhz_inst0/i_out_d1            |                3 |             15 |
+|  dac_dco_BUFG     |                                        | noniq_dac_186mhz_inst0/q_out_d1            |                2 |             15 |
+|  dac_dco_BUFG     |                                        | noniq_dac_186mhz_inst1/i_out_q[14]_i_1_n_0 |                2 |             15 |
+|  sysclk_IBUF_BUFG | ad9781_inst/spi_data_reg_q[15]_i_1_n_0 | noniq_dac_186mhz_inst1/cpu_resetn          |                6 |             16 |
+|  dac_dco_BUFG     |                                        | dac_lut_cordic/i_d1                        |                5 |             17 |
+|  dac_dco_BUFG     |                                        | dac_lut_cordic/q_d1                        |                5 |             17 |
+|  i2c_clock        | lmk_inst/data_reg_q[17]_i_1_n_0        |                                            |                6 |             17 |
+|  dac_dco_BUFG     |                                        | dacq_reg[lut_phs]0                         |                7 |             26 |
+|  i2c_clock        |                                        | noniq_dac_186mhz_inst1/cpu_resetn          |                9 |             26 |
+|  sysclk_IBUF_BUFG | d[dac_rst]                             | noniq_dac_186mhz_inst1/cpu_resetn          |                8 |             29 |
+|  sysclk_IBUF_BUFG |                                        | noniq_dac_186mhz_inst1/cpu_resetn          |               19 |             56 |
+|  dac_dco_BUFG     |                                        | noniq_dac_186mhz_inst1/cpu_resetn          |               52 |            140 |
+|  dac_dco_BUFG     |                                        |                                            |              706 |           3541 |
++-------------------+----------------------------------------+--------------------------------------------+------------------+----------------+
+
+

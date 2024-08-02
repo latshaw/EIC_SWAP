@@ -1,0 +1,1 @@
+--relax --debug typical --mt auto -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ila_mp2iq_debug xil_defaultlib.ila_mp2iq_debug xil_defaultlib.glbl -log elaborate.log

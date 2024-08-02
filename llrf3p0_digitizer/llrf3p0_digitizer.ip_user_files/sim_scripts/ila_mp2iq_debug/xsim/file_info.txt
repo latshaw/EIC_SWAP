@@ -1,0 +1,2 @@
+ila_mp2iq_debug.vhd,vhdl,xil_defaultlib,../../../../llrf3p0_digitizer.srcs/sources_1/ip/ila_mp2iq_debug/sim/ila_mp2iq_debug.vhd,incdir="../../../../llrf3p0_digitizer.srcs/sources_1/ip/ila_mp2iq_debug/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v

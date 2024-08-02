@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_2" LaunchPart="xc7a200tsbg484-1" LaunchTime="1722607452">
+  <File Type="BITSTR-BMM" Name="llrf3p0_digitizer_top_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="llrf3p0_digitizer_top_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="llrf3p0_digitizer_top_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="llrf3p0_digitizer_top_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="llrf3p0_digitizer_top.tcl"/>
+  <File Type="OPT-TIMING" Name="llrf3p0_digitizer_top_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="llrf3p0_digitizer_top_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="llrf3p0_digitizer_top_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="llrf3p0_digitizer_top_reports.tcl"/>
+  <File Type="OPT-DRC" Name="llrf3p0_digitizer_top_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="llrf3p0_digitizer_top.hwdef"/>
+  <File Type="PWROPT-DCP" Name="llrf3p0_digitizer_top_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="llrf3p0_digitizer_top_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="llrf3p0_digitizer_top_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="llrf3p0_digitizer_top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="llrf3p0_digitizer_top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="llrf3p0_digitizer_top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="llrf3p0_digitizer_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="llrf3p0_digitizer_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="llrf3p0_digitizer_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="llrf3p0_digitizer_top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="llrf3p0_digitizer_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="llrf3p0_digitizer_top_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="llrf3p0_digitizer_top_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="llrf3p0_digitizer_top.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="llrf3p0_digitizer_top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="llrf3p0_digitizer_top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="llrf3p0_digitizer_top_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="llrf3p0_digitizer_top.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="llrf3p0_digitizer_top_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="llrf3p0_digitizer_top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="llrf3p0_digitizer_top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="llrf3p0_digitizer_top_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="llrf3p0_digitizer_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="llrf3p0_digitizer_top_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="llrf3p0_digitizer_top_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="llrf3p0_digitizer_top.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="llrf3p0_digitizer_top_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="llrf3p0_digitizer_top_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="llrf3p0_digitizer_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="llrf3p0_digitizer_top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="llrf3p0_digitizer_top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="llrf3p0_digitizer_top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="llrf3p0_digitizer_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="llrf3p0_digitizer_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="llrf3p0_digitizer_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="llrf3p0_digitizer_top_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="llrf3p0_digitizer_top_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="llrf3p0_digitizer_top_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="llrf3p0_digitizer_top_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="llrf3p0_digitizer_top_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="llrf3p0_digitizer_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="llrf3p0_digitizer_top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="llrf3p0_digitizer_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="llrf3p0_digitizer_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="llrf3p0_digitizer_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="llrf3p0_digitizer_top_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="llrf3p0_digitizer_top_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="llrf3p0_digitizer_top.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="llrf3p0_digitizer_top_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="llrf3p0_digitizer_top.rbt"/>
+  <File Type="BITSTR-NKY" Name="llrf3p0_digitizer_top.nky"/>
+  <File Type="PDI-FILE" Name="llrf3p0_digitizer_top.pdi"/>
+  <File Type="RCFI_FILE" Name="llrf3p0_digitizer_top.rcfi"/>
+  <File Type="CFI_FILE" Name="llrf3p0_digitizer_top.cfi"/>
+  <File Type="RNPI_FILE" Name="llrf3p0_digitizer_top.rnpi"/>
+  <File Type="NPI_FILE" Name="llrf3p0_digitizer_top.npi"/>
+  <File Type="RBD_FILE" Name="llrf3p0_digitizer_top.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="llrf3p0_digitizer_top.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="llrf3p0_digitizer_top.sysdef"/>
+  <File Type="BG-BGN" Name="llrf3p0_digitizer_top.bgn"/>
+  <File Type="BG-DRC" Name="llrf3p0_digitizer_top.drc"/>
+  <File Type="RDI-RDI" Name="llrf3p0_digitizer_top.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ad9781.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/shift_by_m.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/lmk03328_i2c.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mp2iq_init_new.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mp2iq_reg_new.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mp2iq.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/noniq_dac186MHz.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/power_enable_sequence.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/iq_mod.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/components.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/cordic_shift18.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/iq2mp_init18.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/iq2mp_reg26.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/iq2mp_18bit.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/iq2mp_18bit_small.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="llrf3p0_digitizer_top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/llrf3p0_digitizer_const.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
