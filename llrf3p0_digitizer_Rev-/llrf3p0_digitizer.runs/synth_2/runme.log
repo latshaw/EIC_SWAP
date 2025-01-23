@@ -1,0 +1,947 @@
+
+*** Running vivado
+    with args -log llrf3p0_digitizer_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source llrf3p0_digitizer_top.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source llrf3p0_digitizer_top.tcl -notrace
+Command: synth_design -top llrf3p0_digitizer_top -part xc7a200tsbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 36268 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 829.098 ; gain = 233.566
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'llrf3p0_digitizer_top' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'lmk04808' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/lmk04808.vhd:464]
+WARNING: [Synth 8-6014] Unused sequential element q_reg[wait_cnt] was removed.  [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/lmk04808.vhd:734]
+INFO: [Synth 8-256] done synthesizing module 'lmk04808' (1#1) [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/lmk04808.vhd:464]
+INFO: [Synth 8-638] synthesizing module 'ad9781' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/ad9781.vhd:17]
+WARNING: [Synth 8-6014] Unused sequential element spi_data_in_q_reg was removed.  [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/ad9781.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'ad9781' (2#1) [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/ad9781.vhd:17]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 1 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'IBUFDS_inst' to cell 'IBUFDS' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:279]
+INFO: [Synth 8-638] synthesizing module 'mp2iq' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/mp2iq.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'mp2iq_init_new' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/mp2iq_init_new.vhd:19]
+	Parameter n bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mp2iq_init_new' (3#1) [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/mp2iq_init_new.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'mp2iq_reg_new' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/mp2iq_reg_new.vhd:22]
+	Parameter n bound to: 26 - type: integer 
+	Parameter n bound to: 26 - type: integer 
+INFO: [Synth 8-3491] module 'shift_by_m' declared at 'F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/shift_by_m.vhd:6' bound to instance 'i_shift' of component 'shift_by_m' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/mp2iq_reg_new.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'shift_by_m' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/shift_by_m.vhd:13]
+	Parameter n bound to: 26 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shift_by_m' (4#1) [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/shift_by_m.vhd:13]
+	Parameter n bound to: 26 - type: integer 
+INFO: [Synth 8-3491] module 'shift_by_m' declared at 'F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/shift_by_m.vhd:6' bound to instance 'q_shift' of component 'shift_by_m' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/mp2iq_reg_new.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'mp2iq_reg_new' (5#1) [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/mp2iq_reg_new.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'mp2iq' (6#1) [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/mp2iq.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'noniq_dac186MHz' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/noniq_dac186MHz.vhd:173]
+INFO: [Synth 8-256] done synthesizing module 'noniq_dac186MHz' (7#1) [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/noniq_dac186MHz.vhd:173]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ODDR_inst' to cell 'ODDR' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:418]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: FAST - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUFDS_inst_dac_i' to cell 'OBUFDS' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:432]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ODDR_inst' to cell 'ODDR' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:418]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: FAST - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUFDS_inst_dac_i' to cell 'OBUFDS' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:432]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ODDR_inst' to cell 'ODDR' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:418]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: FAST - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUFDS_inst_dac_i' to cell 'OBUFDS' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:432]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ODDR_inst' to cell 'ODDR' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:418]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: FAST - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUFDS_inst_dac_i' to cell 'OBUFDS' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:432]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ODDR_inst' to cell 'ODDR' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:418]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: FAST - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUFDS_inst_dac_i' to cell 'OBUFDS' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:432]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ODDR_inst' to cell 'ODDR' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:418]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: FAST - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUFDS_inst_dac_i' to cell 'OBUFDS' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:432]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ODDR_inst' to cell 'ODDR' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:418]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: FAST - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUFDS_inst_dac_i' to cell 'OBUFDS' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:432]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ODDR_inst' to cell 'ODDR' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:418]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: FAST - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUFDS_inst_dac_i' to cell 'OBUFDS' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:432]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ODDR_inst' to cell 'ODDR' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:418]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: FAST - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUFDS_inst_dac_i' to cell 'OBUFDS' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:432]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ODDR_inst' to cell 'ODDR' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:418]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: FAST - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUFDS_inst_dac_i' to cell 'OBUFDS' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:432]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ODDR_inst' to cell 'ODDR' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:418]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: FAST - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUFDS_inst_dac_i' to cell 'OBUFDS' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:432]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ODDR_inst' to cell 'ODDR' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:418]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: FAST - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUFDS_inst_dac_i' to cell 'OBUFDS' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:432]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ODDR_inst' to cell 'ODDR' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:418]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: FAST - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUFDS_inst_dac_i' to cell 'OBUFDS' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:432]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ODDR_inst' to cell 'ODDR' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:418]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: FAST - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUFDS_inst_dac_i' to cell 'OBUFDS' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:432]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ODDR_inst_dci' to cell 'ODDR' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:443]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: FAST - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUFDS_inst_dci' to cell 'OBUFDS' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:458]
+WARNING: [Synth 8-6014] Unused sequential element dacq_reg[dac1i] was removed.  [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:298]
+WARNING: [Synth 8-6014] Unused sequential element dacq_reg[dac1q] was removed.  [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:298]
+WARNING: [Synth 8-6014] Unused sequential element dacq_reg[hb_cnt] was removed.  [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:298]
+INFO: [Synth 8-256] done synthesizing module 'llrf3p0_digitizer_top' (8#1) [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:113]
+WARNING: [Synth 8-3331] design llrf3p0_digitizer_top has unconnected port AD9781_sdo
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 903.367 ; gain = 307.836
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 903.367 ; gain = 307.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 903.367 ; gain = 307.836
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.104 . Memory (MB): peak = 903.367 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/constrs_1/new/llrf3p0_digitizer_const.xdc]
+Finished Parsing XDC File [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/constrs_1/new/llrf3p0_digitizer_const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/constrs_1/new/llrf3p0_digitizer_const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/llrf3p0_digitizer_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/llrf3p0_digitizer_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1027.691 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 15 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1027.691 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1027.691 ; gain = 432.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1027.691 ; gain = 432.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1027.691 ; gain = 432.160
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ad9781'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/mp2iq_reg_new.vhd:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/mp2iq_reg_new.vhd:61]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/mp2iq_reg_new.vhd:62]
+INFO: [Synth 8-4471] merging register 'q_reg[vadj_en]' into 'q_reg[pwr_en]' [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/power_enable_sequence.vhd:205]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                        000010000 |                             0000
+                 cs_high |                        000100000 |                             0001
+               load_data |                        000001000 |                             0010
+                  cs_low |                        000000001 |                             0011
+               sclk_high |                        000000010 |                             0100
+                sclk_low |                        000000100 |                             0101
+               check_bit |                        100000000 |                             0110
+               check_reg |                        001000000 |                             0111
+             config_done |                        010000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'ad9781'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1027.691 ; gain = 432.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 1     
+	   3 Input     26 Bit       Adders := 72    
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               42 Bit    Registers := 2     
+	               41 Bit    Registers := 2     
+	               34 Bit    Registers := 2     
+	               32 Bit    Registers := 7     
+	               26 Bit    Registers := 186   
+	               25 Bit    Registers := 2     
+	               18 Bit    Registers := 5     
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 12    
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 55    
+	   2 Input     18 Bit        Muxes := 6     
+	   2 Input     16 Bit        Muxes := 12    
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 8     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module llrf3p0_digitizer_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 3     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module lmk04808 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 7     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+Module ad9781 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 1     
+Module mp2iq_init_new 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+Module mp2iq_reg_new 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     26 Bit       Adders := 4     
++---Registers : 
+	               26 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 3     
+Module mp2iq 
+Detailed RTL Component Info : 
++---Registers : 
+	               42 Bit    Registers := 2     
+	               41 Bit    Registers := 2     
+	               26 Bit    Registers := 2     
+	               25 Bit    Registers := 2     
+	               18 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 6     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module noniq_dac186MHz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               34 Bit    Registers := 2     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 11    
+	   2 Input     15 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP i_mul_pip_reg, operation Mode is: (C or 0)+A2*B.
+DSP Report: register i_mul_pip_reg is absorbed into DSP i_mul_pip_reg.
+DSP Report: register i_mul_pip_reg is absorbed into DSP i_mul_pip_reg.
+DSP Report: operator i_mul_d is absorbed into DSP i_mul_pip_reg.
+DSP Report: operator i_mul_d is absorbed into DSP i_mul_pip_reg.
+DSP Report: Generating DSP q_mul_pip_reg, operation Mode is: (C or 0)+A2*B.
+DSP Report: register q_mul_pip_reg is absorbed into DSP q_mul_pip_reg.
+DSP Report: register q_mul_pip_reg is absorbed into DSP q_mul_pip_reg.
+DSP Report: operator q_mul_d is absorbed into DSP q_mul_pip_reg.
+DSP Report: operator q_mul_d is absorbed into DSP q_mul_pip_reg.
+DSP Report: Generating DSP noniq_dac_186mhz_inst0/q_mul_reg_reg, operation Mode is: (A2*B'')'.
+DSP Report: register noniq_dac_186mhz_inst0/q_in_pip_reg is absorbed into DSP noniq_dac_186mhz_inst0/q_mul_reg_reg.
+DSP Report: register noniq_dac_186mhz_inst0/q_in_q_reg is absorbed into DSP noniq_dac_186mhz_inst0/q_mul_reg_reg.
+DSP Report: register noniq_dac_186mhz_inst0/q_mul_reg is absorbed into DSP noniq_dac_186mhz_inst0/q_mul_reg_reg.
+DSP Report: register noniq_dac_186mhz_inst0/q_mul_reg_reg is absorbed into DSP noniq_dac_186mhz_inst0/q_mul_reg_reg.
+DSP Report: register noniq_dac_186mhz_inst0/q_mul_pip_reg is absorbed into DSP noniq_dac_186mhz_inst0/q_mul_reg_reg.
+DSP Report: operator noniq_dac_186mhz_inst0/q_mul_d is absorbed into DSP noniq_dac_186mhz_inst0/q_mul_reg_reg.
+DSP Report: Generating DSP noniq_dac_186mhz_inst0/i_mul_reg_reg, operation Mode is: (A2*B'')'.
+DSP Report: register noniq_dac_186mhz_inst0/i_in_pip_reg is absorbed into DSP noniq_dac_186mhz_inst0/i_mul_reg_reg.
+DSP Report: register noniq_dac_186mhz_inst0/i_in_q_reg is absorbed into DSP noniq_dac_186mhz_inst0/i_mul_reg_reg.
+DSP Report: register noniq_dac_186mhz_inst0/i_mul_reg is absorbed into DSP noniq_dac_186mhz_inst0/i_mul_reg_reg.
+DSP Report: register noniq_dac_186mhz_inst0/i_mul_reg_reg is absorbed into DSP noniq_dac_186mhz_inst0/i_mul_reg_reg.
+DSP Report: register noniq_dac_186mhz_inst0/i_mul_pip_reg is absorbed into DSP noniq_dac_186mhz_inst0/i_mul_reg_reg.
+DSP Report: operator noniq_dac_186mhz_inst0/i_mul_d is absorbed into DSP noniq_dac_186mhz_inst0/i_mul_reg_reg.
+WARNING: [Synth 8-3331] design llrf3p0_digitizer_top has unconnected port AD9781_sdo
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][0][1]' (FDE) to 'lmk04808_inst/q_reg[pll_data][0][9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_42/\dacq_reg[lut_phs][0] )
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][0][2]' (FDE) to 'lmk04808_inst/q_reg[pll_data][0][30]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[0]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[1]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[2]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[3]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[4]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[5]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[6]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[7]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[8]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[9]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[10]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[11]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[12]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[13]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[14]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[15]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[16]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[17]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[18]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[19]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[20]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[21]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[22]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[23]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/mp2iq_reg_gen/\a_reg[24] )
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/a_reg[25]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/q_reg[23]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/p_reg[25]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/q_reg[23]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/q_reg[1]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/q_reg[2]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/q_reg[3]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/q_reg[4]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/q_reg[7]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/q_reg[8]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/q_reg[8]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/q_reg[9]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/q_reg[10]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/q_reg[11]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/q_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/q_reg[12]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/q_reg[13]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/q_reg[14]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/q_reg[14]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/q_reg[15]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/q_reg[16]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/q_reg[17]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/q_reg[17]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/q_reg[18]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/q_reg[18]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/q_reg[19]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/q_reg[19]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/q_reg[20]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/q_reg[20]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/q_reg[21]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/q_reg[21]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/q_reg[23]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/q_reg[24]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/q_reg[24]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/q_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[0]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[1]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[2]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[3]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[4]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[5]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[6]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[7]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[8]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[9]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[10]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[11]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[12]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[13]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[14]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[15]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[16]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[17]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[18]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[19]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[20]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[21]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[22]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[23]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dac_lut_cordic/mp2iq_reg_gen/i_reg[24]' (FDCE) to 'dac_lut_cordic/mp2iq_reg_gen/i_reg[25]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/mp2iq_reg_gen/\i_reg[25] )
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][3][3]' (FDE) to 'lmk04808_inst/q_reg[pll_data][0][20]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][0][3]' (FDE) to 'lmk04808_inst/q_reg[pll_data][0][30]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][1][4]' (FDE) to 'lmk04808_inst/q_reg[pll_data][0][30]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][3][4]' (FDE) to 'lmk04808_inst/q_reg[pll_data][0][20]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][0][4]' (FDE) to 'lmk04808_inst/q_reg[pll_data][0][30]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][1][5]' (FDE) to 'lmk04808_inst/q_reg[pll_data][0][30]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][3][5]' (FDE) to 'lmk04808_inst/q_reg[pll_data][0][30]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][0][5]' (FDE) to 'lmk04808_inst/q_reg[pll_data][0][30]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][1][6]' (FDE) to 'lmk04808_inst/q_reg[pll_data][0][30]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][1][7]' (FDE) to 'lmk04808_inst/q_reg[pll_data][1][8]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][2][7]' (FDE) to 'lmk04808_inst/q_reg[pll_data][2][27]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][0][7]' (FDE) to 'lmk04808_inst/q_reg[pll_data][0][8]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][2][8]' (FDE) to 'lmk04808_inst/q_reg[pll_data][2][28]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][2][9]' (FDE) to 'lmk04808_inst/q_reg[pll_data][0][30]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][3][9]' (FDE) to 'lmk04808_inst/q_reg[pll_data][0][30]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][1][10]' (FDE) to 'lmk04808_inst/q_reg[pll_data][0][30]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][2][10]' (FDE) to 'lmk04808_inst/q_reg[pll_data][2][22]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][3][10]' (FDE) to 'lmk04808_inst/q_reg[pll_data][3][22]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][1][11]' (FDE) to 'lmk04808_inst/q_reg[pll_data][0][30]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][2][11]' (FDE) to 'lmk04808_inst/q_reg[pll_data][0][30]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][3][11]' (FDE) to 'lmk04808_inst/q_reg[pll_data][0][30]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][0][11]' (FDE) to 'lmk04808_inst/q_reg[pll_data][0][30]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][1][12]' (FDE) to 'lmk04808_inst/q_reg[pll_data][0][30]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][3][12]' (FDE) to 'lmk04808_inst/q_reg[pll_data][0][30]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][0][12]' (FDE) to 'lmk04808_inst/q_reg[pll_data][0][30]'
+INFO: [Synth 8-3886] merging instance 'lmk04808_inst/q_reg[pll_data][1][13]' (FDE) to 'lmk04808_inst/q_reg[pll_data][0][30]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\lmk04808_inst/q_reg[pll_data][0][20] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\cordic_gain_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\cordic_gain_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\noniq_dac_186mhz_inst0/i_in_d_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lmk04808_inst/q_reg[pll_data][0][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dacq_reg[dac_test1][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\q_reg[gpio_led][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\q_reg[set_vadj][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lmk04808_inst/q_reg[sync] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lmk04808_inst/q_reg[pll_data][4][13] )
+WARNING: [Synth 8-3332] Sequential element (ad9781_inst/FSM_onehot_state_reg[7]) is unused and will be removed from module llrf3p0_digitizer_top.
+WARNING: [Synth 8-3332] Sequential element (i_mul_pip_reg) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (i_mul_pip1_reg) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (i_mul_pip1_reg[20]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (i_mul_pip1_reg[19]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (i_mul_pip1_reg[18]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (i_mul_pip1_reg[17]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (i_mul_pip1_reg[16]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (i_mul_pip1_reg[15]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (i_mul_pip1_reg[14]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (i_mul_pip1_reg[13]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (i_mul_pip1_reg[12]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (i_mul_pip1_reg[11]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (i_mul_pip1_reg[10]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (i_mul_pip1_reg[9]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (i_mul_pip1_reg[8]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (i_mul_pip1_reg[7]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (i_mul_pip1_reg[6]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (i_mul_pip1_reg[5]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (i_mul_pip1_reg[4]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (i_mul_pip1_reg[3]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (i_mul_pip1_reg[2]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (i_mul_pip1_reg[1]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (q_mul_pip_reg) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (q_mul_pip1_reg) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (q_mul_pip1_reg[20]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (q_mul_pip1_reg[19]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (q_mul_pip1_reg[18]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (q_mul_pip1_reg[17]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (q_mul_pip1_reg[16]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (q_mul_pip1_reg[15]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (q_mul_pip1_reg[14]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (q_mul_pip1_reg[13]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (q_mul_pip1_reg[12]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (q_mul_pip1_reg[11]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (q_mul_pip1_reg[10]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (q_mul_pip1_reg[9]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (q_mul_pip1_reg[8]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (q_mul_pip1_reg[7]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (q_mul_pip1_reg[6]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (q_mul_pip1_reg[5]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (q_mul_pip1_reg[4]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (q_mul_pip1_reg[3]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (q_mul_pip1_reg[2]) is unused and will be removed from module mp2iq.
+WARNING: [Synth 8-3332] Sequential element (q_mul_pip1_reg[1]) is unused and will be removed from module mp2iq.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/mp2iq_reg_gen/\q_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/mp2iq_reg_gen/\q_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[0].mp2iq_single_reg_i /\p_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[0].mp2iq_single_reg_i /\q_q_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[0].mp2iq_single_reg_i /\i_q_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[1].mp2iq_single_reg_i /\a_in_q_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[1].mp2iq_single_reg_i /\a_in_q_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[2].mp2iq_single_reg_i /\a_in_q_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[2].mp2iq_single_reg_i /\a_in_q_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[3].mp2iq_single_reg_i /\a_in_q_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[3].mp2iq_single_reg_i /\a_in_q_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[4].mp2iq_single_reg_i /\a_in_q_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[4].mp2iq_single_reg_i /\a_in_q_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[5].mp2iq_single_reg_i /\a_in_q_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[5].mp2iq_single_reg_i /\a_in_q_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[6].mp2iq_single_reg_i /\a_in_q_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[6].mp2iq_single_reg_i /\a_in_q_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[7].mp2iq_single_reg_i /\a_in_q_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[7].mp2iq_single_reg_i /\a_in_q_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[8].mp2iq_single_reg_i /\a_in_q_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[8].mp2iq_single_reg_i /\a_in_q_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[9].mp2iq_single_reg_i /\a_in_q_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[9].mp2iq_single_reg_i /\a_in_q_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[10].mp2iq_single_reg_i /\a_in_q_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[10].mp2iq_single_reg_i /\a_in_q_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[11].mp2iq_single_reg_i /\a_in_q_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[11].mp2iq_single_reg_i /\a_in_q_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[12].mp2iq_single_reg_i /\a_in_q_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[12].mp2iq_single_reg_i /\a_in_q_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[13].mp2iq_single_reg_i /\a_in_q_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[13].mp2iq_single_reg_i /\a_in_q_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[14].mp2iq_single_reg_i /\a_in_q_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[14].mp2iq_single_reg_i /\a_in_q_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[15].mp2iq_single_reg_i /\a_in_q_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[15].mp2iq_single_reg_i /\a_in_q_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[16].mp2iq_single_reg_i /\a_in_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[16].mp2iq_single_reg_i /\a_in_q_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[1].mp2iq_single_reg_i /\p_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[0].mp2iq_single_reg_i /\a_out_reg[23] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[1].mp2iq_single_reg_i /\a_out_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[2].mp2iq_single_reg_i /\a_out_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[1].mp2iq_single_reg_i /\q_q_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[2].mp2iq_single_reg_i /\p_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[2].mp2iq_single_reg_i /\a_q_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[3].mp2iq_single_reg_i /\a_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[1].mp2iq_single_reg_i /\i_out_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[3].mp2iq_single_reg_i /\p_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[4].mp2iq_single_reg_i /\a_out_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[2].mp2iq_single_reg_i /\i_q_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[4].mp2iq_single_reg_i /\p_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[5].mp2iq_single_reg_i /\a_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[2].mp2iq_single_reg_i /\q_out_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[5].mp2iq_single_reg_i /\p_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[7].mp2iq_single_reg_i /\a_out_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[3].mp2iq_single_reg_i /\q_q_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[6].mp2iq_single_reg_i /\p_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[8].mp2iq_single_reg_i /\a_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[3].mp2iq_single_reg_i /\i_out_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[7].mp2iq_single_reg_i /\p_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[9].mp2iq_single_reg_i /\a_out_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[4].mp2iq_single_reg_i /\i_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[8].mp2iq_single_reg_i /\p_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[10].mp2iq_single_reg_i /\a_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[9].mp2iq_single_reg_i /\p_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[10].mp2iq_single_reg_i /\a_out_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[10].mp2iq_single_reg_i /\p_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[11].mp2iq_single_reg_i /\a_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[11].mp2iq_single_reg_i /\p_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[16].mp2iq_single_reg_i /\a_out_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[12].mp2iq_single_reg_i /\p_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[13].mp2iq_single_reg_i /\p_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[14].mp2iq_single_reg_i /\p_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[15].mp2iq_single_reg_i /\p_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dac_lut_cordic/\mp2iq_reg_gen_i[16].mp2iq_single_reg_i /\p_q_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1027.691 ; gain = 432.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++----------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mp2iq           | (C or 0)+A2*B | 25     | 16     | 15     | -      | 41     | 1    | 0    | 0    | -    | -     | 0    | 1    | 
+|mp2iq           | (C or 0)+A2*B | 25     | 16     | 15     | -      | 41     | 1    | 0    | 0    | -    | -     | 0    | 1    | 
+|noniq_dac186MHz | (A2*B'')'     | 18     | 16     | -      | -      | 34     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|noniq_dac186MHz | (A2*B'')'     | 18     | 16     | -      | -      | 34     | 1    | 2    | -    | -    | -     | 1    | 1    | 
++----------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/mp2iq.vhd:102]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/mp2iq.vhd:103]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 1040.652 ; gain = 445.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 1050.074 ; gain = 454.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/mp2iq.vhd:102]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.srcs/sources_1/new/mp2iq.vhd:103]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 1073.738 ; gain = 478.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1081.199 ; gain = 485.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1081.199 ; gain = 485.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1081.199 ; gain = 485.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1081.199 ; gain = 485.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1081.199 ; gain = 485.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1081.199 ; gain = 485.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     3|
+|2     |CARRY4    |   496|
+|3     |DSP48E1_1 |     2|
+|4     |DSP48E1_2 |     2|
+|5     |LUT1      |    85|
+|6     |LUT2      |   886|
+|7     |LUT3      |   939|
+|8     |LUT4      |    53|
+|9     |LUT5      |    74|
+|10    |LUT6      |   108|
+|11    |ODDR      |    15|
+|12    |FDCE      |   218|
+|13    |FDPE      |     3|
+|14    |FDRE      |  3620|
+|15    |FDSE      |    82|
+|16    |IBUF      |     2|
+|17    |IBUFDS    |     1|
+|18    |OBUF      |    21|
+|19    |OBUFDS    |    15|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------+-----------------+------+
+|      |Instance                                     |Module           |Cells |
++------+---------------------------------------------+-----------------+------+
+|1     |top                                          |                 |  6625|
+|2     |  ad9781_inst                                |ad9781           |   115|
+|3     |  dac_lut_cordic                             |mp2iq            |  5657|
+|4     |    mp2iq_reg_gen                            |mp2iq_init_new   |    57|
+|5     |    \mp2iq_reg_gen_i[0].mp2iq_single_reg_i   |mp2iq_reg_new    |   134|
+|6     |    \mp2iq_reg_gen_i[10].mp2iq_single_reg_i  |mp2iq_reg_new_0  |   336|
+|7     |    \mp2iq_reg_gen_i[11].mp2iq_single_reg_i  |mp2iq_reg_new_1  |   337|
+|8     |    \mp2iq_reg_gen_i[12].mp2iq_single_reg_i  |mp2iq_reg_new_2  |   336|
+|9     |    \mp2iq_reg_gen_i[13].mp2iq_single_reg_i  |mp2iq_reg_new_3  |   336|
+|10    |    \mp2iq_reg_gen_i[14].mp2iq_single_reg_i  |mp2iq_reg_new_4  |   336|
+|11    |    \mp2iq_reg_gen_i[15].mp2iq_single_reg_i  |mp2iq_reg_new_5  |   336|
+|12    |    \mp2iq_reg_gen_i[16].mp2iq_single_reg_i  |mp2iq_reg_new_6  |   337|
+|13    |    \mp2iq_reg_gen_i[17].mp2iq_single_reg_i  |mp2iq_reg_new_7  |   122|
+|14    |    \mp2iq_reg_gen_i[1].mp2iq_single_reg_i   |mp2iq_reg_new_8  |   205|
+|15    |    \mp2iq_reg_gen_i[2].mp2iq_single_reg_i   |mp2iq_reg_new_9  |   282|
+|16    |    \mp2iq_reg_gen_i[3].mp2iq_single_reg_i   |mp2iq_reg_new_10 |   324|
+|17    |    \mp2iq_reg_gen_i[4].mp2iq_single_reg_i   |mp2iq_reg_new_11 |   335|
+|18    |    \mp2iq_reg_gen_i[5].mp2iq_single_reg_i   |mp2iq_reg_new_12 |   337|
+|19    |    \mp2iq_reg_gen_i[6].mp2iq_single_reg_i   |mp2iq_reg_new_13 |   336|
+|20    |    \mp2iq_reg_gen_i[7].mp2iq_single_reg_i   |mp2iq_reg_new_14 |   337|
+|21    |    \mp2iq_reg_gen_i[8].mp2iq_single_reg_i   |mp2iq_reg_new_15 |   337|
+|22    |    \mp2iq_reg_gen_i[9].mp2iq_single_reg_i   |mp2iq_reg_new_16 |   337|
+|23    |  lmk04808_inst                              |lmk04808         |   389|
+|24    |  noniq_dac_186mhz_inst0                     |noniq_dac186MHz  |   180|
++------+---------------------------------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1081.199 ; gain = 485.668
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 46 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 1081.199 ; gain = 361.344
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1081.199 ; gain = 485.668
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1081.199 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 531 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1081.199 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 15 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+261 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 1081.199 ; gain = 781.613
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1081.199 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/Bachiman_FDrive/Projects/LLRF_EIC/nexys_digilent_llrf/llrf3p0_digitizer_Rev-/llrf3p0_digitizer.runs/synth_2/llrf3p0_digitizer_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file llrf3p0_digitizer_top_utilization_synth.rpt -pb llrf3p0_digitizer_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 23 16:49:52 2024...

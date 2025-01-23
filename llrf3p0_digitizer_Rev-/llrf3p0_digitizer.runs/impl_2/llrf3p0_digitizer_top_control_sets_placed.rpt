@@ -1,0 +1,109 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Sep 23 16:50:35 2024
+| Host         : EESBACHIMAN1 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file llrf3p0_digitizer_top_control_sets_placed.rpt
+| Design       : llrf3p0_digitizer_top
+| Device       : xc7a200t
+--------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    31 |
+|    Minimum number of control sets                        |    31 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   138 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    31 |
+| >= 0 to < 4        |     7 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     2 |
+| >= 16              |    11 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            3504 |          704 |
+| No           | No                    | Yes                    |              84 |           27 |
+| No           | Yes                   | No                     |             171 |           56 |
+| Yes          | No                    | No                     |              63 |           14 |
+| Yes          | No                    | Yes                    |             138 |           45 |
+| Yes          | Yes                   | No                     |              14 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+------------------------------------------+------------------------------------------+------------------+----------------+
+|    Clock Signal   |               Enable Signal              |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
++-------------------+------------------------------------------+------------------------------------------+------------------+----------------+
+|  sysclk_IBUF_BUFG | d[pwr_sync]                              | lmk04808_inst/cpu_resetn                 |                1 |              1 |
+|  sysclk_IBUF_BUFG | d[lmk_init]                              | lmk04808_inst/cpu_resetn                 |                1 |              1 |
+|  lmk_spi_clk_BUFG |                                          |                                          |                1 |              1 |
+|  sysclk_IBUF_BUFG | cpu_resetn_IBUF                          |                                          |                2 |              2 |
+|  sysclk_IBUF_BUFG | d[pwr_en]                                | lmk04808_inst/cpu_resetn                 |                1 |              2 |
+|  lmk_spi_clk_BUFG | cpu_resetn_IBUF                          | lmk04808_inst/q[pll_data][1][26]_i_1_n_0 |                1 |              3 |
+|  lmk_spi_clk_BUFG | cpu_resetn_IBUF                          | lmk04808_inst/q[pll_data][3][20]_i_1_n_0 |                1 |              3 |
+|  sysclk_IBUF_BUFG | ad9781_inst/en_bit_count                 | lmk04808_inst/cpu_resetn                 |                1 |              4 |
+|  lmk_spi_clk_BUFG | cpu_resetn_IBUF                          | lmk04808_inst/q[pll_data][0][10]_i_1_n_0 |                1 |              4 |
+|  lmk_spi_clk_BUFG | cpu_resetn_IBUF                          | lmk04808_inst/q[pll_data][4][30]_i_1_n_0 |                1 |              4 |
+|  sysclk_IBUF_BUFG | ad9781_inst/reg_count_q[4]_i_1_n_0       | lmk04808_inst/cpu_resetn                 |                2 |              5 |
+|  lmk_spi_clk_BUFG | lmk04808_inst/en_pll_data_cnt            | lmk04808_inst/cpu_resetn                 |                1 |              5 |
+|  lmk_spi_clk_BUFG | lmk04808_inst/q[pll_bit_cnt][4]_i_1_n_0  | lmk04808_inst/cpu_resetn                 |                1 |              5 |
+|  sysclk_IBUF_BUFG | ad9781_inst/wait_count_q[8]_i_1_n_0      | lmk04808_inst/cpu_resetn                 |                3 |              9 |
+|  lmk_spi_clk_BUFG | lmk04808_inst/d[sclk_cnt]                | lmk04808_inst/cpu_resetn                 |                3 |              9 |
+|  lmk_spi_clk_BUFG | lmk04808_inst/d[le_cnt]                  | lmk04808_inst/cpu_resetn                 |                4 |             10 |
+|  lmk_spi_clk_BUFG | lmk04808_inst/d[data_ld_wait_cnt]        | lmk04808_inst/cpu_resetn                 |                3 |             10 |
+|  dac_dco_BUFG     |                                          | noniq_dac_186mhz_inst0/d_out_d1          |                3 |             13 |
+|  dac_dco_BUFG     |                                          | noniq_dac_186mhz_inst0/i_out_d1          |                3 |             15 |
+|  dac_dco_BUFG     |                                          | noniq_dac_186mhz_inst0/q_out_d1          |                3 |             15 |
+|  sysclk_IBUF_BUFG | ad9781_inst/spi_data_reg_q[15]_i_1_n_0   | lmk04808_inst/cpu_resetn                 |                6 |             16 |
+|  dac_dco_BUFG     |                                          | dac_lut_cordic/i_d1                      |                6 |             17 |
+|  dac_dco_BUFG     |                                          | dac_lut_cordic/q_d1                      |                6 |             17 |
+|  dac_dco_BUFG     |                                          | dacq_reg[lut_phs]0                       |                7 |             25 |
+|  sysclk_IBUF_BUFG | sel                                      | lmk04808_inst/cpu_resetn                 |                8 |             29 |
+|  lmk_spi_clk_BUFG | lmk04808_inst/q[pll_data_in][31]_i_1_n_0 | lmk04808_inst/cpu_resetn                 |               10 |             32 |
+|  lmk_spi_clk_BUFG |                                          | lmk04808_inst/cpu_resetn                 |               12 |             41 |
+|  sysclk_IBUF_BUFG |                                          | lmk04808_inst/cpu_resetn                 |               17 |             50 |
+|  lmk_spi_clk_BUFG | cpu_resetn_IBUF                          |                                          |               12 |             61 |
+|  dac_dco_BUFG     |                                          | lmk04808_inst/cpu_resetn                 |               26 |             62 |
+|  dac_dco_BUFG     |                                          |                                          |              703 |           3503 |
++-------------------+------------------------------------------+------------------------------------------+------------------+----------------+
+
+

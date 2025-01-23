@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../llrf3p0_digitizer.srcs/sources_1/ip/ila_mp2iq_debug/sim/ila_mp2iq_debug.vhd" \
+
+nosort
